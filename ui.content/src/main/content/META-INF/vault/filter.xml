@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/infiniti" mode="merge"/>
+    <filter root="/content/infiniti" mode="merge"/>
+    <filter root="/content/dam/infiniti" mode="merge">
+        <exclude pattern="/content/dam/infiniti(/.*)?"/>
+        <include pattern="/content/dam/infiniti/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/infiniti/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/infiniti" mode="merge"/>
+</workspaceFilter>
