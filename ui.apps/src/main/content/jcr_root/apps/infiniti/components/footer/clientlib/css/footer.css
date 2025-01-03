@@ -1,0 +1,19 @@
+.footer {
+    padding: 20px;
+    background-color: #0c1a2c; /* Fondo oscuro */
+    color: #fff;
+    text-align: center;
+}
+
+.footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+}

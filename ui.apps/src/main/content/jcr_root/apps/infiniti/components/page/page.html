@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Set the title with a fallback if 'jcr:title' is not defined -->
+    <title data-sly-test="${currentPage.properties['jcr:title']}">${currentPage.properties['jcr:title']}</title>
+    <title data-sly-unwrap data-sly-test="${!currentPage.properties['jcr:title']}">Default Title</title>
+
+    <!-- ClientLibs inclusion for CSS and JS -->
+    <link rel="stylesheet" href="/etc.clientlibs/infiniti/clientlibs/site.css">
+    <script src="/etc.clientlibs/infiniti/clientlibs/site.js"></script>
+</head>
+<body>
+<!-- Header Component -->
+<header data-sly-resource="${'header' @ resourceType='infiniti/components/header'}"></header>
+
+<!-- Main Content -->
+<main>
+    <h1>${'Welcome to Infiniti!'}</h1>
+    <p>${'This is the main content area.'}</p>
+</main>
+
+<!-- Footer Component -->
+<footer data-sly-resource="${'footer' @ resourceType='infiniti/components/footer'}"></footer>
+</body>
+</html>
